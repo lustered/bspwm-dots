@@ -10,3 +10,4 @@ cp -r ~/.config/dunst config
 cp -r ~/.config/mpd config
 cp -r ~/.config/ncmpcpp config
 cp -r ~/.config/polybar/ config
+cp -r ~/.zshrc .
