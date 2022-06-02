@@ -98,6 +98,11 @@ autocmd FileType c,cpp,cs,java setlocal commentstring=//\ %s
 
 
 " emmet 
-let g:user_emmet_mode='a'
+" let g:user_emmet_mode='a'
 let g:user_emmet_install_global = 0
-autocmd FileType html,css EmmetInstall
+autocmd FileType html,css, js, jsx EmmetInstall
+let g:user_emmet_settings = {
+\  'javascript' : {
+\      'extends' : 'jsx',
+\  },
+\}

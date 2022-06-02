@@ -1,16 +1,7 @@
-/*
- *
- * Author  : Aditya Shakya
- * Mail    : adi1090x@gmail.com
- * Github  : @adi1090x
- * Twitter : @adi1090x
- *
- */
-
 configuration {
 	font:							"Iosevka Nerd Font 10";
     show-icons:                     true;
-	icon-theme: 					"Papirus";
+	icon-theme: 					"WhiteSur-purple-dark";
     display-drun: 					"";
     drun-display-format:            "{name}";
     disable-history:                false;
@@ -26,7 +17,7 @@ window {
     background-color:               @bg;
     text-color:                     @fg;
 	border:							0px;
-	border-color:					@bg1;
+	border-color:					@bg;
     border-radius:                  0px;
 	width:							700px;
     location:                       center;
@@ -38,12 +29,12 @@ prompt {
     enabled: 						true;
 	padding: 						12px 15px 12px 15px;
 	background-color: 				@bg1;
-	text-color: 					@fga;
+	text-color: 					@fg;
 	font:							"Iosevka Nerd Font 12";
 }
 
 entry {
-    background-color:               @bg2;
+    background-color:               @bg3;
     text-color:                     @fga;
     placeholder-color:              @fga;
     expand:                         true;
@@ -98,9 +89,11 @@ element {
 element-icon {
     size:                           24px;
     border:                         0px;
+    background-color:               transparent;
 }
 
 element-text {
+    background-color:               transparent;
     expand:                         true;
     horizontal-align:               0;
     vertical-align:                 0.5;

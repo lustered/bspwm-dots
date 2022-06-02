@@ -2,6 +2,7 @@
 cp ~/.vimrc .
 cp ~/.tmux.conf .
 cp ~/.config/picom.conf config
+cp ~/.profile .
 cp -r ~/.vim config
 cp -r ~/.config/bspwm config
 cp -r ~/.config/sxhkd config

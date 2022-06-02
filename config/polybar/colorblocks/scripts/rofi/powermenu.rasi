@@ -14,10 +14,10 @@ configuration {
 
 window {
     transparency:                   "real";
-    background-color:               #E7BDC6;
-    text-color:                     #deaf9d;
+    background-color:               @bg;
+    text-color:                     @fg;
 	border:							0px;
-	border-color:					@bg1;
+	border-color:					@al;
     border-radius:                  0px;
 	width:							300px;
     location:                       north east;
@@ -28,8 +28,8 @@ window {
 prompt {
     enabled: 						true;
 	padding: 						12px 15px 12px 15px;
-	background-color: 				@bg2;
-	text-color: 					@fga;
+	background-color: 				@bg3;
+	text-color: 					"black";
 }
 
 textbox-prompt-colon {
@@ -42,7 +42,7 @@ textbox-prompt-colon {
 }
 
 entry {
-    background-color:               @bg2;
+    background-color:               @bg;
     text-color:                     @fga;
     placeholder-color:              @fga;
     expand:                         true;
@@ -56,7 +56,7 @@ entry {
 
 inputbar {
 	children: 						[ textbox-prompt-colon, prompt ];
-    background-color:               @bg2;
+    background-color:               @bg3;
     text-color:                     @fg;
     expand:                         false;
 	border:							0px;
@@ -108,7 +108,7 @@ element-text {
 }
 
 element selected {
-    background-color:               #deaf9d;
+    background-color:               @bg2;
     text-color:                     @bg3;
 	border:							0px;
     border-radius:                  0px;
