@@ -2,9 +2,7 @@ configuration {
 	font:							"Iosevka Nerd Font 10";
     show-icons:                     true;
 	icon-theme: 					"Papirus";
-    display-drun: 					"";
-    drun-display-format:            "{name}";
-    disable-history:                false;
+    disable-history:                true;
     fullscreen:                     false;
 	hide-scrollbar: 				true;
 	sidebar-mode: 					false;
@@ -19,9 +17,9 @@ window {
 	border:							0px;
 	border-color:					@al;
     border-radius:                  0px;
-	width:							300px;
+	width:							250px;
     location:                       north east;
-    x-offset:                       -50px;
+    x-offset:                       -300px;
     y-offset:                       50px;
 }
 
@@ -38,20 +36,7 @@ textbox-prompt-colon {
 	background-color: 				@bg1;
 	text-color: 					@fga;
 	expand: false;
-	str: "";
-}
-
-entry {
-    background-color:               @bg;
-    text-color:                     @fga;
-    placeholder-color:              @fga;
-    expand:                         true;
-    horizontal-align:               0;
-    placeholder:                    "Search...";
-	padding: 						15px 0px 0px 15px;
-    margin:                         0px 250px 0px 0px;
-    border-radius:                  0px 50px 50px 0px;
-    blink:                          true;
+	str: "";
 }
 
 inputbar {

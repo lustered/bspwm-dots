@@ -1,2 +1,4 @@
 config/mpd/*
 !config/mpd/mpd.conf
+config/.vim/plugged
+config/.vim/autoload

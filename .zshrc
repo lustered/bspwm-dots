@@ -1,3 +1,4 @@
+autoload -U colors && colors
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -76,6 +77,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # User configuration
 
@@ -104,3 +106,4 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH="$HOME/.pyenv/shims:$PATH"
 export PYENV_ROOT="$HOME/.pyenv"
+PS1=" ☪ %{%F{blue}%}%n%{%f%} %{%F{magenta}%}:: %{%F{blue}%}%1~ %{$reset_color%}% "

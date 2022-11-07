@@ -4,8 +4,9 @@
   al:    #00000000;
   bg:    #E7BDC6;
   bg1:   #628C95;
-  bg2:   #deaf9d;
+  bg2:   #838BBA;
   bg3:   #838BBA;
   fg:    #2b2b2b;
-  fga:   "black";
+  fg2:   #a3aad6;
+  fga:   #422f47;
 }

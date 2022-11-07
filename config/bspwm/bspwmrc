@@ -5,13 +5,14 @@ killall -q sxhkd; sxhkd &
 xset r rate 240 80
 
 # applets and apps
-feh --bg-fill ~/Pictures/Wallpapers/space2.jpg --bg-fill ~/Pictures/Wallpapers/space2.jpg
+# feh --bg-fill ~/Pictures/Wallpapers/pinkcar.png # --bg-fill ~/Pictures/Wallpapers/pinkcar.png
+feh --bg-tile ~/Pictures/Wallpapers/pinkcar.png # --bg-fill ~/Pictures/Wallpapers/pinkcar.png
 $HOME/.config/polybar/colorblocks/launch.sh
 picom --experimental-backends &
 killall pasystray; pasystray &
 blueman-applet &
 nm-applet &
-mpd &
+# mpd &
 
 # monitors/workspaces
 bspc monitor ^1 -d 1 2 3
@@ -19,7 +20,7 @@ bspc monitor ^2 -d 4 5 6
 
 # windows
 bspc config border_width                2
-bspc config window_gap                  40
+bspc config window_gap                  20
 bspc config split_ratio                 0.5
 bspc config borderless_monocle          true
 bspc config gapless_monocle             true
@@ -35,9 +36,8 @@ bspc config normal_border_color         "#2b2b2b"
 bspc rule -a '*:lxappearance'           state=floating center=true
 bspc rule -a '*:feh'                    state=floating center=true
 bspc rule -a mpv                        state=floating follow=on
+bspc rule -a Google-chrome              state=floating follow=on
+bspc rule -a kcalc                      state=floating follow=on
 bspc rule -a Nitrogen                   state=floating follow=on
 bspc rule -a firefox                    follow=on focus=on
 bspc rule -a google-chrome              follow=on focus=on
-# bspc rule -a mplayer2                   state=floating
-# bspc rule -a Kupfer.py                  focus=on
-# bspc rule -a Screenkey                  manage=off

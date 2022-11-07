@@ -28,7 +28,7 @@
 ########################################
 #                TEXT                  #
 ########################################
-    font = Cascadia Code 18
+    font = Cascadia Code 9
     line_height = 1
     markup = full
     format = "<b>%s </b>\n%b"

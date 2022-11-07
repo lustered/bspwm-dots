@@ -15,7 +15,11 @@ super + {Return,t}
 # rofi
 super + d
 	rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/polybar/colorblocks/scripts/rofi/launcher.rasi
+super + m
+	google-chrome-stable --window-size=1200,500 --window-position=2200,1450 --simulate-outdated-no-au-'Tue, 31 Dec 2099 23:59:59 GMT' --app=https://monkeytype.com &
 
+super + shift + d
+	$HOME/.config/polybar/colorblocks/scripts/sinkselect.sh
 
 # sxhkd reload
 super + Escape
@@ -38,6 +42,10 @@ super + shift + p
 
 super + f
 	bspc node -t {fullscreen, tiled}
+
+super + a
+	bspc node @/ -B
+
 
 ################################ focus/swap ################################# 
 
@@ -80,7 +88,7 @@ super + alt + shift + {Left,Down,Up,Right}
 
 # move a floating window
 super + alt + {a,s,w,d}
-	bspc node -v {-40 0,0 40,0 -40,40 0}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
 
 # powermenu
 super + p
@@ -88,12 +96,17 @@ super + p
 	
 
 ######################## volume/brightness control ########################## 
-XF86AudioLowerVolume
-	amixer set Master 5%-
+XF86AudioMicMute
+	pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
 XF86AudioRaiseVolume
-	amixer set Master 5%+
+	pactl set-sink-volume @DEFAULT_SINK@  +5%
+
+XF86AudioLowerVolume
+	pactl set-sink-volume @DEFAULT_SINK@  -5%
+
 XF86AudioMute
-	amixer set Master toggle
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 XF86MonBrightnessDown
 	sudo xbacklight -dec 5

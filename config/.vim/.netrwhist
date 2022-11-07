@@ -1,8 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =6
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/topre/Documents/mgrader'
+let g:netrw_dirhist_1='/home/topre/Documents/LoginPageAuth/__pycache__'
+let g:netrw_dirhist_0='/home/topre/Documents/LoginPageAuth/auth'
+let g:netrw_dirhist_9='/home/topre/.config/bspwm'
+let g:netrw_dirhist_8='/var/log'
+let g:netrw_dirhist_7='/home/topre/Documents/cuteplayer/obsolete'
 let g:netrw_dirhist_6='/home/topre/.config/bspwm'
 let g:netrw_dirhist_5='/var/log/lightdm'
 let g:netrw_dirhist_4='/home/topre/.config/bspwm'
 let g:netrw_dirhist_3='/home/topre/.config/sxhkd'
-let g:netrw_dirhist_2='/home/topre/.config/bspwm'
-let g:netrw_dirhist_1='/home/topre/.config/kitty'
